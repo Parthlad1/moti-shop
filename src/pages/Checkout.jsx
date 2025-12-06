@@ -51,7 +51,7 @@ Please confirm my order.`;
     }
 
     const msg = encodeURIComponent(buildMessage());
-    const wa = "918446723980";
+    const wa = "919373219062";
     window.open(`https://wa.me/${wa}?text=${msg}`, "_blank");
 
     navigate("/");

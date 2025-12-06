@@ -42,7 +42,7 @@ export default function Home({ showToast }) {   // ⬅ accept toast
             </Link>
 
             <a
-              href="https://wa.me/918446723980"
+              href="https://wa.me/919373219062"
               target="_blank"
               rel="noreferrer"
               className={styles.heroBtnGhost}

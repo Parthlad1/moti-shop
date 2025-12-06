@@ -27,7 +27,7 @@ export default function Footer() {
             </a>
 
             <a
-              href="https://wa.me/918446723980"
+              href="https://wa.me/919373219062"
               target="_blank"
               rel="noreferrer"
               className={styles.icon}
