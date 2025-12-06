@@ -1,0 +1,210 @@
+/* -------------------------------------------------- */
+/* HERO SECTION                                        */
+/* -------------------------------------------------- */
+
+.hero {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+  padding: 48px 28px;
+  border-radius: 24px;
+  background: linear-gradient(135deg, #fffdf8, #faf8f2);
+  box-shadow: 0 12px 34px rgba(0,0,0,0.06);
+  margin-bottom: 40px;
+  animation: fadeUp 0.4s ease;
+}
+
+.heroText h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 34px;
+  font-weight: 700;
+  margin: 0;
+  color: var(--text);
+}
+
+.heroText p {
+  font-size: 15px;
+  color: var(--muted);
+  margin-top: 8px;
+  line-height: 1.55;
+  max-width: 480px;
+}
+
+.heroButtons {
+  margin-top: 18px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+
+/* -------------------------------------------------- */
+/* Premium Hero Buttons (Home Page Only)               */
+/* -------------------------------------------------- */
+
+.heroBtn,
+.heroBtnGhost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 46px;
+  padding: 0 22px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 10px;
+  white-space: nowrap;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.25s ease;
+}
+
+/* Solid Gold Button */
+.heroBtn {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  box-shadow: 0 4px 16px rgba(191, 167, 96, 0.25);
+}
+
+.heroBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 22px rgba(191, 167, 96, 0.38);
+}
+
+/* Ghost Button */
+.heroBtnGhost {
+  background: transparent;
+  border: 1px solid var(--beige);
+  color: var(--accent);
+}
+
+.heroBtnGhost:hover {
+  background: #faf7ee;
+  transform: translateY(-2px);
+}
+
+
+/* -------------------------------------------------- */
+/* HERO IMAGE                                          */
+/* -------------------------------------------------- */
+
+.heroImg {
+  width: 260px;
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+}
+
+
+/* -------------------------------------------------- */
+/* SECTION TITLES                                      */
+/* -------------------------------------------------- */
+
+.sectionTitle {
+  font-family: "Playfair Display", serif;
+  font-size: 26px;
+  margin: 40px 0 12px;
+  color: var(--text);
+}
+
+
+/* -------------------------------------------------- */
+/* BEST SELLERS GRID                                   */
+/* -------------------------------------------------- */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 24px;
+  width: 100%;            /* full width */
+  box-sizing: border-box;
+  margin: 0 auto 40px;    /* bottom spacing */
+}
+
+
+
+/* -------------------------------------------------- */
+/* WHY CHOOSE US                                       */
+/* -------------------------------------------------- */
+
+.whyGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 18px;
+  margin-top: 20px;
+}
+
+.whyCard {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 8px 26px rgba(0,0,0,0.06);
+  display: grid;
+  gap: 8px;
+  transition: 0.25s ease;
+}
+
+.whyCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 40px rgba(191,167,96,0.18);
+}
+
+.whyTag {
+  background: var(--soft);
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  width: max-content;
+}
+
+.whyCard h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.whyCard p {
+  margin: 0;
+  color: var(--muted);
+}
+
+
+/* -------------------------------------------------- */
+/* ANIMATION                                           */
+/* -------------------------------------------------- */
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+
+/* -------------------------------------------------- */
+/* RESPONSIVE MOBILE STYLES                            */
+/* -------------------------------------------------- */
+
+@media (max-width: 720px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 32px 20px; /* Prevent edge touching */
+  }
+
+  .heroImg {
+    width: 80%;
+    max-width: 260px;
+  }
+
+  .heroButtons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroImg {
+    width: 100%;
+  }
+}
+

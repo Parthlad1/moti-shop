@@ -1,0 +1,44 @@
+/* Container for category filters */
+.category-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin: 24px 0 24px; /* top and bottom spacing */
+}
+
+.category-filter .btn {
+  padding: 10px 18px;
+  font-size: 14px;
+  border-radius: 14px;
+  transition: all 0.25s ease;
+}
+
+.category-filter .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(191, 167, 96, 0.25);
+}
+
+.category-filter .btn.active {
+  background: var(--accent);
+  color: #fff;
+  box-shadow: 0 6px 18px rgba(191, 167, 96, 0.35);
+}
+
+/* Products grid */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 24px;
+  margin-top: 12px;
+}
+
+/* Optional: responsive tweaks */
+@media (max-width: 720px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+  .category-filter {
+    gap: 8px;
+  }
+}

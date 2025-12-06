@@ -1,0 +1,173 @@
+.item {
+  display: flex;
+  gap: 14px;
+  background: var(--card);
+  padding: 14px;
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  align-items: flex-start;
+}
+
+/* Product image */
+.image {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Content */
+.info {
+  flex: 1;
+}
+
+/* Name + Total Price */
+.topRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.name {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.meta {
+  font-size: 13px;
+  color: var(--muted);
+  margin-top: 2px;
+}
+
+.totalPrice {
+  font-weight: 700;
+  color: var(--accent);
+  font-size: 17px;
+}
+
+/* QTY controls */
+.qtyRow {
+  margin-top: 10px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.qtyBtn {
+  width: 34px;
+  height: 34px;
+  border: 1px solid var(--beige);
+  background: #fff;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.qtyBtn:hover {
+  background: var(--beige);
+  color: white;
+}
+
+/* Input */
+.qtyInput {
+  width: 60px;
+  text-align: center;
+  padding: 6px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Remove button */
+.removeBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  background: #f3f3f3;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.removeBtn:hover {
+  background: #ffe6e6;
+  border-color: #ffb3b3;
+}
+
+/* ---------------- */
+/*     MOBILE 📱    */
+/* ---------------- */
+@media (max-width: 480px) {
+  .item {
+    padding: 12px;
+  }
+
+  .image {
+    width: 75px;
+    height: 75px;
+  }
+
+  .topRow {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .totalPrice {
+    font-size: 16px;
+  }
+
+  .qtyRow {
+    display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: nowrap; /* explicit no-wrap */
+  }
+
+  .qtyBtn {
+    width: 32px;
+    height: 32px;
+  }
+
+  .qtyInput {
+    width: 55px;
+    font-size: 14px;
+  }
+
+  /* ⭐ KEEP DELETE ON SAME ROW */
+  .removeBtn {
+    min-width: auto !important;   /* ⬅ fixes global .btn rule */
+    width: auto;
+    margin-top: 0;
+    padding: 8px 12px;
+
+    flex-shrink: 0;               /* ⬅ do NOT wrap */
+    white-space: nowrap;          /* ⬅ keep icon inline */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #f8f8f8;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    gap: 6px;
+  }
+
+  .removeBtn:hover {
+    background: #ffecec;
+    border-color: #ffb3b3;
+  }
+
+  .removeBtn svg {
+    width: 18px;
+    height: 18px;
+    stroke: #c0392b;
+  }
+}

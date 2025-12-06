@@ -1,0 +1,203 @@
+/* ------------------------------------------------------ */
+/* Wrapper                                                 */
+/* ------------------------------------------------------ */
+
+.wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px 12px;
+  display: grid;
+  gap: 28px;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+/* ------------------------------------------------------ */
+/* Card (Glass UI)                                         */
+/* ------------------------------------------------------ */
+
+.card {
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.08);
+  display: grid;
+  gap: 24px;
+  animation: fadeUp 0.4s ease;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ------------------------------------------------------ */
+/* Columns → Responsive                                    */
+/* ------------------------------------------------------ */
+
+.columns {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+
+@media (min-width: 820px) {
+  .columns {
+    grid-template-columns: 1fr 300px;
+  }
+}
+
+/* ------------------------------------------------------ */
+/* Floating Input Groups                                   */
+/* ------------------------------------------------------ */
+
+.inputGroup {
+  position: relative;
+}
+
+.input {
+  width: 100%;
+  padding: 14px 14px 10px 14px;
+  border: 1px solid #ddd;
+  border-radius: 14px;
+  background: #fff;
+  outline: none;
+  font-size: 15px;
+  transition: 0.2s ease;
+}
+
+.input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(191, 167, 96, 0.2);
+}
+
+.label {
+  position: absolute;
+  top: 14px;
+  left: 16px;
+  background: white;
+  padding: 0 6px;
+  font-size: 14px;
+  color: #777;
+  pointer-events: none;
+  transition: 0.2s ease;
+}
+
+.input:not(:placeholder-shown) + .label,
+.input:focus + .label {
+  top: -8px;
+  font-size: 12px;
+  color: var(--accent);
+}
+
+/* Input row (splits only on large screens) */
+.row {
+  display: grid;
+  gap: 14px;
+}
+
+@media (min-width: 480px) {
+  .row {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* ------------------------------------------------------ */
+/* Order Summary List                                      */
+/* ------------------------------------------------------ */
+
+.itemList {
+  max-height: 220px;
+  overflow-y: auto;
+  display: grid;
+  gap: 12px;
+  padding-right: 4px;
+}
+
+.itemRow {
+  background: #fff;
+  padding: 12px 14px;
+  border-radius: 14px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+}
+
+/* ------------------------------------------------------ */
+/* Total Card                                              */
+/* ------------------------------------------------------ */
+
+.totalCard {
+  background: linear-gradient(135deg, #fff5d7, #f2e1a2);
+  padding: 22px;
+  border-radius: 18px;
+  border: 1px solid #e7d39a;
+  text-align: center;
+  box-shadow: 0 4px 18px rgba(191, 167, 96, 0.25);
+}
+
+.totalLabel {
+  color: #555;
+  font-size: 14px;
+}
+
+.totalValue {
+  color: var(--accent);
+  font-size: 30px;
+  font-weight: 700;
+}
+
+/* ------------------------------------------------------ */
+/* Buttons                                                 */
+/* ------------------------------------------------------ */
+
+.btnRow {
+  display: grid;
+  gap: 14px;
+}
+
+@media (min-width: 520px) {
+  .btnRow {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.btnPrimary {
+  background: var(--accent);
+  color: white;
+  padding: 16px;
+  border-radius: 14px;
+  border: none;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.28s;
+}
+
+.btnPrimary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(191, 167, 96, 0.35);
+}
+
+.btnGhost {
+  background: transparent;
+  border: 1px solid var(--beige);
+  padding: 16px;
+  border-radius: 14px;
+  font-weight: 600;
+  font-size: 17px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.btnGhost:hover {
+  background: #faf7ee;
+}
