@@ -8,6 +8,7 @@ import ProductDetail from "./pages/ProductDetail";
 import CartPage from "./pages/Cart";
 import Checkout from "./pages/Checkout";
 import Toast from "./components/Toast";
+import ScrollToTop from "./components/ScrollToTop";
 
 export default function App() {
   const [toast, setToast] = useState({ show: false, message: "" });
@@ -24,6 +25,7 @@ export default function App() {
 
   return (
     <div className="app-root">
+      <ScrollToTop />   {/* 👈 FIX for scroll reset */}
       {/* 🔔 Toast Notification */}
       <Toast
         message={toast.message}
