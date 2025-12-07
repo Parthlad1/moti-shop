@@ -208,3 +208,55 @@
   }
 }
 
+/* ------------------------------- */
+/* Mobile "See More" Link */
+/* ------------------------------- */
+
+.seeMoreMobile {
+  display: none;
+  text-align: center;
+  margin: 14px 0 6px;
+}
+
+/* Link styling */
+.seeMoreLink {
+  font-size: 16px;
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+
+  /* subtle slide animation */
+  transform: translateY(4px);
+  opacity: 0;
+  animation: slideUp 0.5s ease forwards;
+  animation-delay: 0.1s;
+
+  transition: 0.3s ease;
+}
+
+/* Glowing + slide hover effect */
+.seeMoreLink:hover {
+  text-shadow: 0 0 10px rgba(191, 167, 96, 0.6);
+  transform: translateY(2px);
+}
+
+/* Slide animation from bottom */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(4px);
+  }
+}
+
+/* Show only on mobile */
+@media (max-width: 480px) {
+  .seeMoreMobile {
+    display: block;
+  }
+}
+

@@ -12,19 +12,6 @@ export default function Home({ showToast }) {   // ⬅ accept toast
     setItems(productsData.slice(0, 4)); // Best sellers
   }, []);
 
-  const heroImage =
-    "data:image/svg+xml;utf8," +
-    encodeURIComponent(
-      `<svg xmlns="http://www.w3.org/2000/svg" width="720" height="480">
-        <rect rx="20" width="100%" height="100%" fill="#FFF7F9"/>
-        <g transform="translate(40,40)">
-          <circle cx="120" cy="120" r="100" fill="#F7DDE2" />
-          <circle cx="200" cy="80" r="56" fill="#FAFAF7" stroke="#D8C4A3" stroke-width="4"/>
-          <rect x="280" y="30" width="220" height="300" rx="18" fill="#FFF"/>
-        </g>
-      </svg>`
-    );
-
   return (
     <div>
       {/* HERO */}
@@ -62,6 +49,14 @@ export default function Home({ showToast }) {   // ⬅ accept toast
           <ProductCard key={p.id} product={p} showToast={showToast} /> 
         ))}
       </section>
+
+      {/* Mobile "See More" link */}
+<div className={styles.seeMoreMobile}>
+  <Link to="/products" className={styles.seeMoreLink}>
+    See More →
+  </Link>
+</div>
+
 
       {/* WHY CHOOSE US */}
       <h2 className={styles.sectionTitle}>Why Choose Us</h2>
