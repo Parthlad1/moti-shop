@@ -14,7 +14,7 @@ export default function Footer() {
           {/* Social Icons */}
           <div className={styles.socials}>
             <a
-              href="https://www.instagram.com/"
+              href="https://www.instagram.com/creativity_byshree"
               target="_blank"
               rel="noreferrer"
               className={styles.icon}

@@ -3,7 +3,7 @@ import ProductCard from "../components/ProductCard";
 import productsData from "../data/products.json";
 import styles from "./Products.module.css"; // import the CSS module
 
-const categories = ["all", "bracelets", "necklaces", "earrings", "rakhis", "gifts"];
+const categories = ["all","spiritual","rangoli", "bracelets", "necklaces", "earrings", "rakhis", "gifts"];
 
 export default function Products({ showToast }) {
   const [items, setItems] = useState([]);
