@@ -6,6 +6,11 @@ import styles from "./Checkout.module.css";
 export default function Checkout() {
   const { cartItems, total } = useCart();
   const navigate = useNavigate();
+  const [errors, setErrors] = useState({
+  phone: "",
+  pincode: ""
+});
+
 
   const [form, setForm] = useState({
     name: "",
@@ -15,9 +20,49 @@ export default function Checkout() {
     notes: ""
   });
 
-  function update(e) {
-    setForm(prev => ({ ...prev, [e.target.name]: e.target.value }));
+  // Format phone number: 10 digits → 5-5 format
+function formatPhone(value) {
+  let v = value.replace(/\D/g, ""); // remove non-digits
+
+  if (v.length > 10) v = v.slice(0, 10); // limit to 10 digits
+
+  if (v.length > 5) {
+    return v.slice(0, 5) + " " + v.slice(5);
   }
+  return v;
+}
+
+// Validate + limit pincode to 6 digits
+function formatPincode(value) {
+  let v = value.replace(/\D/g, ""); // only numbers
+  return v.slice(0, 6); // restrict strictly to 6 digits
+}
+
+
+  function update(e) {
+  const { name, value } = e.target;
+
+  let v = value;
+
+  // auto-clean phone number
+  if (name === "phone") {
+    v = v.replace(/\D/g, ""); // digits only
+    if (v.length > 10) v = v.slice(0, 10);
+  }
+
+  // auto-clean pincode
+  if (name === "pincode") {
+    v = v.replace(/\D/g, ""); // digits only
+    if (v.length > 6) v = v.slice(0, 6);
+  }
+
+  setForm(prev => ({ ...prev, [name]: v }));
+
+  // Clear error when typing
+  setErrors(prev => ({ ...prev, [name]: "" }));
+}
+
+
 
   function buildMessage() {
     const items = cartItems
@@ -43,19 +88,31 @@ Please confirm my order.`;
   }
 
   function sendWhatsApp(e) {
-    e.preventDefault();
+  e.preventDefault();
 
-    if (!form.name || !form.phone || !form.address || !form.pincode) {
-      alert("Please fill all required fields.");
-      return;
-    }
+  const newErrors = {};
 
-    const msg = encodeURIComponent(buildMessage());
-    const wa = "919373219062";
-    window.open(`https://wa.me/${wa}?text=${msg}`, "_blank");
-
-    navigate("/");
+  // phone validation
+  if (form.phone.length !== 10) {
+    newErrors.phone = "Phone number must be 10 digits.";
   }
+
+  // pincode validation
+  if (form.pincode.length !== 6) {
+    newErrors.pincode = "Pincode must be 6 digits.";
+  }
+
+  setErrors(newErrors);
+
+  if (Object.keys(newErrors).length > 0) return;
+
+  // Continue if valid
+  const msg = encodeURIComponent(buildMessage());
+  const wa = "919373219062";
+  window.open(`https://wa.me/${wa}?text=${msg}`, "_blank");
+  navigate("/");
+}
+
 
   return (
     <div className={`container ${styles.wrapper}`}>
@@ -85,7 +142,9 @@ Please confirm my order.`;
 
               <div className={styles.inputGroup}>
                 <input
-                  className={styles.input}
+                  className={`${styles.input} ${
+      errors.phone ? styles.inputError + " " + styles.shake : ""
+    }`}
                   name="phone"
                   placeholder=" "
                   value={form.phone}
@@ -93,6 +152,7 @@ Please confirm my order.`;
                   required
                 />
                 <label className={styles.label}>Phone Number</label>
+                {errors.phone && <div className={styles.errorText}>{errors.phone}</div>}
               </div>
 
               <div className={styles.inputGroup}>
@@ -110,7 +170,9 @@ Please confirm my order.`;
               <div className={styles.row}>
                 <div className={styles.inputGroup}>
                   <input
-                    className={styles.input}
+                    className={`${styles.input} ${
+      errors.pincode ? styles.inputError + " " + styles.shake : ""
+    }`}
                     name="pincode"
                     placeholder=" "
                     value={form.pincode}
@@ -118,6 +180,7 @@ Please confirm my order.`;
                     required
                   />
                   <label className={styles.label}>Pincode</label>
+                  {errors.pincode && <div className={styles.errorText}>{errors.pincode}</div>}
                 </div>
 
                 <div className={styles.inputGroup}>

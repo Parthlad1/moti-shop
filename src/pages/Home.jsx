@@ -52,7 +52,7 @@ export default function Home({ showToast }) {   // ⬅ accept toast
           </div>
         </div>
 
-        <img src={heroImage} alt="hero" className={styles.heroImg} />
+        <img src="/Home.jpg" alt="hero" className={styles.heroImg} />
       </section>
 
       {/* BEST SELLERS */}
