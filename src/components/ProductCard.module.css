@@ -76,3 +76,36 @@
   background: var(--beige);
   color: #fff;
 }
+
+/* Make whole top section clickable */
+.clickArea {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+/* Hover effect for desktop */
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 28px rgba(0,0,0,0.12);
+}
+
+.card {
+  transition: 0.25s ease;
+  cursor: pointer;
+}
+
+/* Ensure buttons area is NOT clickable background */
+.actions {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Category text */
+.category {
+  text-transform: capitalize;
+  font-size: 13px;
+  color: #777;
+}
