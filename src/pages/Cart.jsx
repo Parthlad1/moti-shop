@@ -27,7 +27,7 @@ export default function CartPage() {
             </div>
 
             <div className={styles.cartButtons}>
-              <button className="btn" onClick={() => navigate("/checkout")}>Proceed to Checkout</button>
+              <button className={styles.btn} onClick={() => navigate("/checkout")}>Proceed to Checkout</button>
               <button className="btn ghost" onClick={() => clearCart()}>Clear Cart</button>
             </div>
           </div>

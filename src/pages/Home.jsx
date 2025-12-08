@@ -4,9 +4,13 @@ import productsData from "../data/products.json";
 import { Link } from "react-router-dom";
 import styles from "./Home.module.css";
 
-export default function Home({ showToast }) {   // ⬅ accept toast
+export default function Home({ showToast }) { 
+
+  const message = "Hello! I want a custom moti product. Please help me with the order.";
+  const encodedMessage = encodeURIComponent(message); 
 
   const [items, setItems] = useState([]);
+  
 
   useEffect(() => {
     setItems(productsData.slice(0, 4)); // Best sellers
@@ -29,7 +33,7 @@ export default function Home({ showToast }) {   // ⬅ accept toast
             </Link>
 
             <a
-              href="https://wa.me/919373219062"
+              href={`https://wa.me/919373219062?text=${encodedMessage}`}
               target="_blank"
               rel="noreferrer"
               className={styles.heroBtnGhost}
