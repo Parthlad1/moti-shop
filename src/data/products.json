@@ -12,6 +12,17 @@
   },
   {
     "id": 2,
+    "name": "Decorative Saraswati Yantra",
+    "price": 299,
+    "images": [
+      "/Saraswati-B.jpg"
+    ],
+    "description": "Bring the divine blessings of Goddess Saraswati into your home with this beautifully handcrafted Yantra made entirely from pearls. Each piece is meticulously designed with white and red pearls to create a sacred geometric pattern, symbolizing wisdom, knowledge, and creativity. Perfect for your pooja space, study room, or as a thoughtful gift for students and teachers. Handcrafted with care, this Yantra is a unique combination of spirituality and elegant decor.",
+    "category": "spiritual",
+    "customizable": true
+  },
+  {
+    "id": 3,
     "name": "Decorative Lakshmi Paval",
     "price": 249,
     "images": [
@@ -21,9 +32,20 @@
     "category": "spiritual",
     "customizable": true
   },
+  {
+    "id": 4,
+    "name": "Decorative Lakshmi Paval",
+    "price": 249,
+    "images": [
+      "/Laxmi-B.png"
+    ],
+    "description": "Bring home a touch of traditional Indian elegance with this handcrafted decorative piece featuring Lakshmi Paval (feet) motifs. Made with vibrant red and white beads, these auspicious designs symbolize prosperity, wealth, and good fortune. Perfect for home décor, prayer rooms, or festive celebrations like Diwali, this piece adds a sacred and colorful charm to any space. Ideal as a collectible, gifting item, or festive decoration, it honors tradition while enhancing the beauty of your home. Invite prosperity and positivity into your home with this beautifully crafted decorative piece!",
+    "category": "spiritual",
+    "customizable": true
+  },
   
   {
-    "id": 3,
+    "id": 5,
     "name": "Pearl Beaded Diya Rangoli",
     "price": 199,
     "images": [
@@ -34,7 +56,18 @@
     "customizable": true
   },
   {
-    "id": 4,
+    "id": 6,
+    "name": "Pearl Beaded Diya Rangoli",
+    "price": 199,
+    "images": [
+      "/DiyaRangoli-B.png"
+    ],
+    "description": "Brighten your home this festive season with this handcrafted pearl beaded diya rangoli. Featuring vibrant orange, red, and white floral and diya patterns, it’s perfect for Diwali, Navratri, weddings, and celebrations. Durable, reusable, and lightweight, this rangoli can be placed on floors, tabletops, or used as a decorative centerpiece. Handmade with traditional beading techniques, it combines elegance, cultural charm, and hassle-free maintenance for years of festive use.",
+    "category": "rangoli",
+    "customizable": true
+  },
+  {
+    "id": 7,
     "name": "Elegant Moti Beaded Pooja Thali",
     "price": 349,
     "images": [
@@ -45,7 +78,18 @@
     "customizable": true
   },
   {
-    "id": 5,
+    "id": 8,
+    "name": "Elegant Moti Beaded Pooja Thali",
+    "price": 349,
+    "images": [
+      "/MotiThali-B.png"
+    ],
+    "description": "Add a touch of tradition and elegance to your home with this Handmade Moti Beaded Pooja Thali. Crafted with high-quality, colorful beads in white, red, green, and yellow, this decorative plate features intricate beadwork around a durable metallic base, making it both visually stunning and long-lasting. Perfect for religious ceremonies, weddings, or festive décor, this versatile thali can be used as a Pooja plate, a decorative serving platter, or a beautiful display piece for special occasions. Its vibrant design also complements Diwali rangolis and makes for a thoughtful gift for friends and family.",
+    "category": "spiritual",
+    "customizable": true
+  },
+  {
+    "id": 9,
     "name": "Rangoli – Hexagonal Geometric Design",
     "price": 399,
     "images": [
@@ -56,7 +100,18 @@
     "customizable": true
   },
   {
-    "id": 6,
+    "id": 10,
+    "name": "Rangoli – Hexagonal Geometric Design",
+    "price": 399,
+    "images": [
+      "/Rangoli1-B.png"
+    ],
+    "description": "Elevate your home decor with this handmade pink and white beaded Rangoli. Crafted with precision, the hexagonal geometric pattern adds a touch of elegance to any space. Perfect for festivals like Diwali, special occasions, or simply as a decorative centerpiece, this Rangoli is washable, reusable, and durable, ensuring long-lasting beauty. Bring a vibrant, festive charm to your home with this unique and artistic Rangoli.",
+    "category": "rangoli",
+    "customizable": true
+  },
+  {
+    "id": 11,
     "name": "Bell Ornament – Christmas & Holiday Décor",
     "price": 149,
     "images": [
@@ -67,7 +122,18 @@
     "customizable": true
   },
   {
-    "id": 7,
+    "id": 12,
+    "name": "Bell Ornament – Christmas & Holiday Décor",
+    "price": 149,
+    "images": [
+      "/Bell-B.png"
+    ],
+    "description": "Add festive charm with this handcrafted pearl beaded bell ornament. Featuring a classic bell shape with white beads and a striking red border, it’s perfect for Christmas trees, holiday hangings, wind chimes, or DIY décor projects. Lightweight, durable, and meticulously handcrafted, each ornament brings a touch of elegance and homemade charm to your seasonal decorations.",
+    "category": "bracelets",
+    "customizable": true
+  },
+  {
+    "id": 13,
     "name": "Pearl Beaded Swastik – Rangoli, Wall Hanging & Keychain Decor",
     "price": 189,
     "images": [
@@ -78,7 +144,18 @@
     "customizable": true
   },
   {
-    "id": 8,
+    "id": 14,
+    "name": "Pearl Beaded Swastik – Rangoli, Wall Hanging & Keychain Decor",
+    "price": 189,
+    "images": [
+      "/Swastik-B.png"
+    ],
+    "description": "Celebrate tradition and craftsmanship with this handcrafted pearl beaded Swastik. Made with high-quality white and red beads, this versatile piece can be used as a mini rangoli design, wall or door hanging (toran), or a unique keychain. Its intricate beadwork reflects light beautifully, adding a touch of elegance and cultural charm to your home or festive celebrations. Perfect for Diwali, housewarming, or gifting, this handcrafted Swastik blends traditional artistry with modern functionality.",
+    "category": "spiritual",
+    "customizable": true
+  },
+  {
+    "id": 15,
     "name": "Beaded Gopadma Set – Festive Décor",
     "price": 149,
     "images": [
@@ -89,7 +166,18 @@
     "customizable": true
   },
   {
-    "id": 9,
+    "id": 16,
+    "name": "Beaded Gopadma Set – Festive Décor",
+    "price": 149,
+    "images": [
+      "/Gopadma-B.png"
+    ],
+    "description": "Add a touch of tradition and elegance to your home with this handmade beaded Gopadma Rangoli and Border Set. Featuring four circular cow footprint (Gopadma) designs and two red-and-white beaded borders, it’s perfect for Diwali, Navratri, mandirs, or entrance décor. Durable, reusable, and mess-free, this pearl rangoli set brings prosperity, charm, and festive vibes to any space while offering a long-lasting alternative to traditional powder rangoli.",
+    "category": "spiritual",
+    "customizable": true
+  },
+  {
+    "id": 17,
     "name": "Decorative Rangoli (Mahirap) – Design for Plates",
     "price": 449,
     "images": [
@@ -100,7 +188,18 @@
     "customizable": true
   },
   {
-    "id": 10,
+    "id": 18,
+    "name": "Decorative Rangoli (Mahirap) – Design for Plates",
+    "price": 449,
+    "images": [
+      "/Mahirap-B.png"
+    ],
+    "description": "Enhance your festive and spiritual décor with this MotiKraft Decorative Rangoli (Mahirap). Crafted with shiny white and green pearl beads, it features a delicate lattice pattern, perfect for decorating plates, pooja thalis, diyas, or home temples. Durable and reusable, this elegant piece adds a touch of grace and enriches the sacred ambiance of any space. Ideal for festivals, weddings, or daily worship, it combines traditional charm with long-lasting functionality.",
+    "category": "rangoli",
+    "customizable": true
+  },
+  {
+    "id": 19,
     "name": "Kamal Mahirap Rangoli – Design for Plates",
     "price": 549,
     "images": [
@@ -111,11 +210,33 @@
     "customizable": true
   },
   {
-    "id": 11,
+    "id": 20,
+    "name": "Kamal Mahirap Rangoli – Design for Plates",
+    "price": 549,
+    "images": [
+      "/KamalMahirap-B.png"
+    ],
+    "description": "Enhance your festive décor with this handcrafted Kamal Mahirap beaded rangoli. Featuring a lotus-inspired (Kamal) motif in white, red/pink, and green beads, it is perfect for decorating plates, pooja thalis, diyas, or home temples. Durable, reusable, and mess-free, this elegant piece adds a touch of aesthetic charm and auspicious vibes to your celebrations. Ideal for Diwali, Navratri, weddings, or daily worship, it combines traditional artistry with long-lasting functionality.",
+    "category": "rangoli",
+    "customizable": true
+  },
+  {
+    "id": 21,
     "name": "Pearl Nandideep – Traditional Diya Decor",
     "price": 349,
     "images": [
       "/Nandideep.png"
+    ],
+    "description": "Add a touch of tradition and elegance to your home with this handmade decorative Pearl Nandideep (Samai). Crafted with small white and red artificial pearls and gold-colored beads, its design beautifully resembles a traditional oil lamp or diya stand. Perfect for Hindu rituals, poojas, and festive occasions, this piece is also a charming addition to home decor. Often used as part of a Rukhawat display during Maharashtrian weddings, it blends cultural significance with artistic craftsmanship. Bring the warmth of tradition into your home with this unique, handcrafted decorative lamp.",
+    "category": "spiritual",
+    "customizable": true
+  },
+  {
+    "id": 22,
+    "name": "Pearl Nandideep – Traditional Diya Decor",
+    "price": 349,
+    "images": [
+      "/Nandideep-B.png"
     ],
     "description": "Add a touch of tradition and elegance to your home with this handmade decorative Pearl Nandideep (Samai). Crafted with small white and red artificial pearls and gold-colored beads, its design beautifully resembles a traditional oil lamp or diya stand. Perfect for Hindu rituals, poojas, and festive occasions, this piece is also a charming addition to home decor. Often used as part of a Rukhawat display during Maharashtrian weddings, it blends cultural significance with artistic craftsmanship. Bring the warmth of tradition into your home with this unique, handcrafted decorative lamp.",
     "category": "spiritual",
