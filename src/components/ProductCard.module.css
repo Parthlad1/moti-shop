@@ -19,7 +19,7 @@
 
 .card img {
   width: 100%;
-  height: 200px;
+  aspect-ratio: 1 / 1; /* keeps square shape */
   object-fit: cover;
   border-radius: 12px;
   margin-bottom: 12px;
