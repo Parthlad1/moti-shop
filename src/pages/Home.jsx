@@ -57,7 +57,7 @@ export default function Home({ showToast }) {
       {/* Mobile "See More" link */}
 <div className={styles.seeMoreMobile}>
   <Link to="/products" className={styles.seeMoreLink}>
-    See More →
+    See More Products →
   </Link>
 </div>
 
